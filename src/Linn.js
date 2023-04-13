@@ -1,10 +1,10 @@
-function Linn(props) { //PascalCase
+function Linn({linnaNimi, kirjeldus, pilt}) { //PascalCase
     return (
         <div className="linn">
-            <h1>{props.linnaNimi}</h1>
-            <img src={props.pilt} />
+            <h1>{linnaNimi}</h1>
+            <img src={pilt} alt={linnaNimi} />
             <div className="kirjeldus">
-            {props.kirjeldus}
+            {kirjeldus}
             </div>
         </div>
     )
