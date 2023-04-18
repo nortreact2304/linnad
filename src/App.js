@@ -7,7 +7,6 @@ import londonPilt from './pildid/london.jpg'
 
 function App() {
 
-
   const linn1 = {
     nimi: "Pariis",
     kirjeldus: "Paris (English: /ˈpærɪs/; French pronunciation: ​[paʁi] (listen)) is the capital and most populous city of France, with an official estimated population of 2,102,650 residents as of 1 January 2023[2] in an area of more than 105 km² (41 sq mi),[5] making it the fourth-most populated city in the European Union as well as the 30th most densely populated city in the world in 2022.",
@@ -35,8 +34,13 @@ function App() {
     }
   ]
 
+  const lisaLinn = () => {
+    console.log("Lisame linna!")
+  }
+
   return (
     <div className="konteiner">
+      <button onClick={lisaLinn} >Lisa linn</button>
       {linnad.map((linn, index) => {
         return (
         <Linn 
